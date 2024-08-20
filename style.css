@@ -30,7 +30,8 @@ header {
 section{
     display: flex;
     justify-content: flex-end; /* Alinha o conteúdo à direita */
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center;
+     /* Centraliza verticalmente */
      /* Ocupa toda a altura da tela */
     /* Espaço à direita */
     background-color: #609ED4;
@@ -67,15 +68,32 @@ section{
 
 aside{
     position: absolute;
-    right: 20px; /* Posiciona o aside à direita da tela */
+    right: 10rem; /* Posiciona o aside à direita da tela */
     top: 50%;
     transform: translateY(-50%); /* Centraliza verticalmente */
-    max-width: 50%;
+    padding: 20px; /* Ajusta o espaço interno */
+    background-color: #609ED4; /* Cor de fundo */
+    border-radius: 8px; /* Bordas arredondadas (opcional) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o aside */
+    text-align: center; /* Centraliza o texto */
+    max-width: 300px; /* Limita a largura */
+   
 }
 
 aside img{
     width: 100%; /* Ajusta a largura da imagem dentro do aside */
+    margin-bottom: 2cm;
     height: auto; /* Mantém a proporção da imagem */
 }
 
+section h3{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.Status-campo{
+    font-size: 2rem;
+
+}
 
