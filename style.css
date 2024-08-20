@@ -1,19 +1,81 @@
 *{
-    box-sizing: border-box;
+   
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6rem;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 header {
-    background:#36C2CE ;
-    color: #fff;
-    padding:;
-    text-align: ;
+    background: #36C2CE; /* Cor de fundo do header */
+    color: #fff; /* Cor do texto dentro do header */
+    height: 70px; /* Altura do header */
+    display: flex;
+    align-items: center;
+    padding: 10px 0; /* Espaçamento interno apenas no eixo vertical */
+    justify-content: space-between;
+    width: 100%; /* Garante que o header ocupe 100% da largura da tela */
+    position: fixed; /* Fixa o header no topo da página */
+    top: 0; /* Posiciona o header no topo da página */
+    left: 0; /* Posiciona o header no início da página (à esquerda) */
+    z-index: 1000; /* Garante que o header fique sobre outros elementos */
+    
 }
+
+section{
+    display: flex;
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+    align-items: center; /* Centraliza verticalmente */
+     /* Ocupa toda a altura da tela */
+    /* Espaço à direita */
+    background-color: #609ED4;
+
+}
+
+
+
+.logo-alura-image{/*Achar um jeito de colcoar a imagem para o canto direito, mas parece que tem que associar dentro do body*/
+    display: flex;
+    align-items: end;
+    margin-left: -20px;
+}
+
+.logo-alura-image img{
+    width: auto;
+}
+
+
+.links-para-outras-redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+.links-para-outras-redes h3{
+    margin: 0;
+
+}
+
+aside{
+    position: absolute;
+    right: 20px; /* Posiciona o aside à direita da tela */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    max-width: 50%;
+}
+
+aside img{
+    width: 100%; /* Ajusta a largura da imagem dentro do aside */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
