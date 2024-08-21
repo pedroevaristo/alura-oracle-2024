@@ -5,19 +5,19 @@
 }
 
 body{
-    display: flex;
+    display: flex;/**/
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /*A altura do viewport -  é com se fosse na parte de cima do código um espaçamento que a cada vez que aumenta*/
 }
 
 header {
     background: #36C2CE; /* Cor de fundo do header */
     color: #fff; /* Cor do texto dentro do header */
-    height: 70px; /* Altura do header */
+    height: 70px; /* Altura do header e como se fosse a espessura da parte de cima */
     display: flex;
     align-items: center;
-    padding: 10px 0; /* Espaçamento interno apenas no eixo vertical */
+    padding: 10px 0; /*superior, direita, inferior, bottom, left | Espaçamento interno apenas no eixo vertical */
     justify-content: space-between;
     width: 100%; /* Garante que o header ocupe 100% da largura da tela */
     position: fixed; /* Fixa o header no topo da página */
@@ -31,19 +31,14 @@ section{
     display: flex;
     justify-content: flex-end; /* Alinha o conteúdo à direita */
     align-items: center;
-     /* Centraliza verticalmente */
-     /* Ocupa toda a altura da tela */
-    /* Espaço à direita */
-    background-color: #609ED4;
-
 }
 
 
 
-.logo-alura-image{/*Achar um jeito de colcoar a imagem para o canto direito, mas parece que tem que associar dentro do body*/
+.logo-alura-image{
     display: flex;
     align-items: end;
-    margin-left: -20px;
+    margin-left: -20px;/*Aqui seria o posionamento a esquerda onde o lado esquerdo determinara se */
 }
 
 .logo-alura-image img{
@@ -55,7 +50,6 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
     flex-grow: 1;
     text-align: center;
 
@@ -67,16 +61,17 @@ section{
 }
 
 aside{
-    position: absolute;
+    position: absolute;/*é uma propriedade que permite posicionar elementos de acordo com o elemento pai que tenha um position diferente de static */
     right: 10rem; /* Posiciona o aside à direita da tela */
     top: 50%;
     transform: translateY(-50%); /* Centraliza verticalmente */
     padding: 20px; /* Ajusta o espaço interno */
-    background-color: #609ED4; /* Cor de fundo */
+    background-color: #36C2CE; /* Cor de fundo */
     border-radius: 8px; /* Bordas arredondadas (opcional) */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o aside */
     text-align: center; /* Centraliza o texto */
-    max-width: 300px; /* Limita a largura */
+    height: auto; /*limite de altura e largura adaptada a tela*/
+    width: auto;
    
 }
 
@@ -95,5 +90,23 @@ section h3{
 .Status-campo{
     font-size: 2rem;
 
+}
+
+#digite-no-campo{
+    flex-grow: 1; /**/
+    border-radius: 2rem;
+    background-color: #36C2CE;
+    padding: 2%;
+
+}
+.Rodape{
+    position: absolute;
+    background-color: tomato;
+    width: 100%;
+    height: 5vh;
+    bottom: -10rem;
+    text-align: center;
+    justify-content: center;
+    
 }
 
