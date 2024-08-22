@@ -1,7 +1,5 @@
 
  :root {
-    /* fonts */
-    --font-inter: Inter;
   
     /* Colors */
     --dark-blue: #4535C1;
@@ -9,20 +7,6 @@
     --very-light-blue-1: #36C2CE;
     --very-light-blue-2: #77E4C8;
     --white-color: #e5e5e5;
-  
-    /* Gaps */
-    --gap-base: 1rem;
-  
-    /* Paddings */
-    --padding-26xl: 2.812rem;
-    --padding-38xl: 3.562rem;
-    --padding-xl: 1.25rem;
-    --padding-10xs: 0.187rem;
-  
-    /* Border radiuses */
-    --br-13xl: 32px;
-    --br-sm: 14px;
-  
-    /* Effects */
-    --shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-  }
+
+    gap: 0.5em;
+ }
