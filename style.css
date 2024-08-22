@@ -1,17 +1,20 @@
-*{
-   
-    margin: 0;
-    padding: 0;
-}
-
+@import url(styleGlobal.css);
 body{
     display: flex;/**/
     justify-content: center;
     align-items: center;
-    height: 100vh; /*A altura do viewport -  é com se fosse na parte de cima do código um espaçamento que a cada vez que aumenta*/
+    height: 100vh;
 }
 
-header {
+main{
+    background-color: var(--white-color);
+    height: 37.125rem;
+    width: 23.563rem;
+    margin: 0;
+    line-height: normal;
+}
+
+header{
     background: #36C2CE; /* Cor de fundo do header */
     color: #fff; /* Cor do texto dentro do header */
     height: 70px; /* Altura do header e como se fosse a espessura da parte de cima */
@@ -24,27 +27,15 @@ header {
     top: 0; /* Posiciona o header no topo da página */
     left: 0; /* Posiciona o header no início da página (à esquerda) */
     z-index: 1000; /* Garante que o header fique sobre outros elementos */
-    
 }
-
-section{
-    display: flex;
-    justify-content: flex-end; /* Alinha o conteúdo à direita */
-    align-items: center;
-}
-
-
-
 .logo-alura-image{
     display: flex;
-    align-items: end;
-    margin-left: -20px;/*Aqui seria o posionamento a esquerda onde o lado esquerdo determinara se */
+    align-items: center;
+    margin-left: -20px;
 }
-
 .logo-alura-image img{
     width: auto;
 }
-
 
 .links-para-outras-redes{
     display: flex;
@@ -52,7 +43,6 @@ section{
     justify-content: center;
     flex-grow: 1;
     text-align: center;
-
 }
 
 .links-para-outras-redes h3{
@@ -146,7 +136,6 @@ section h3{
 }
 
 
-
 .Rodape{
     position: absolute;
     background-color: tomato;
@@ -157,4 +146,3 @@ section h3{
     justify-content: center;
     
 }
-
