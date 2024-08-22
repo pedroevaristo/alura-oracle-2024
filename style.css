@@ -17,7 +17,7 @@ header {
     height: 70px; /* Altura do header e como se fosse a espessura da parte de cima */
     display: flex;
     align-items: center;
-    padding: 10px 0; /*superior, direita, inferior, bottom, left | Espaçamento interno apenas no eixo vertical */
+    padding: 10px 0; /*superior, direita, inferior, esquerda | Espaçamento interno apenas no eixo vertical */
     justify-content: space-between;
     width: 100%; /* Garante que o header ocupe 100% da largura da tela */
     position: fixed; /* Fixa o header no topo da página */
@@ -71,8 +71,7 @@ aside{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o aside */
     text-align: center; /* Centraliza o texto */
     height: auto; /*limite de altura e largura adaptada a tela*/
-    width: auto;
-   
+    width: auto; 
 }
 
 aside img{
@@ -96,9 +95,58 @@ section h3{
     flex-grow: 1; /**/
     border-radius: 2rem;
     background-color: #36C2CE;
-    padding: 2%;
+    padding: 25px;
 
 }
+
+.Botao-colar-campo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;  
+
+}
+.Campo-escrita{
+    flex-grow: 1;
+    height: 2rem;
+    padding: 0 15px;
+
+}
+
+
+.Botao-colar{
+    height: 2rem;
+    width: 5rem;
+    margin-left: 10px;
+    background-color: #4535C1;
+    color: #fff;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.Botoes-crip-descrip-campo{
+    display: flex;
+    justify-content: space-between; /* Espaça igualmente os botões */
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 10rem; /* Espaço acima dos botões */
+
+}
+
+
+.Botao-descrip, .Botao-crip{
+    flex: 1; /* Cada botão ocupa o mesmo espaço */
+    background-color: #478CCF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px;
+
+
+}
+
+
+
 .Rodape{
     position: absolute;
     background-color: tomato;
