@@ -1,3 +1,4 @@
+![Decodificador de texto](https://github.com/user-attachments/assets/e71159a0-9c17-4b4b-a741-72e14346a581)
 # Criptografia
 
 O projeto tem com o intuito de trasnformar um frase em código "morse", mas utilizando um conjunto de regras aplicadas as vogais. Desenvolvido em HTML, CSS, Javascript.
