@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--blue-light);
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    width:85%;
+    justify-content: center;
+}
+
+li {
+    font-size: 1rem;
+}
+
+a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+
+.logo-alura-image{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    filter: brightness(100);
+}

@@ -7,15 +7,17 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criptografador</title>
-    <link rel="stylesheet" type="text/css" href="styleGlobal.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+
 
 </head>
 
 <body>
     <header>
 
-        <img src="images/Logo-Alura.png" alt="Aqui será sobre logo marca da Alura">
+        <img src="https://cursos.alura.com.br/assets/images/logos/logo-alura.svg" class="logo-alura-image"
+            alt="Aqui será sobre logo marca da Alura">
 
         <ul>
             <li>
@@ -37,35 +39,35 @@
     <main>
         <section id="digitar-texto">
             <div class="box">
-                <h3 class="digite-no-campo">Digite o texto ou cole apertando no Botão</h3>
+                <h3 class="digite-no-campo">Digite o texto</h3>
 
                 <div class="Botao-colar-campo">
-                    <textarea class="Campo-escrita" id="criptografarTexto"> </textarea>
+                    <textarea class="Campo-escrita" id="campoTexto" placeholder="Digite o texto"> </textarea>
 
                     <button class="Botao-colar">Colar</button>
                 </div>
-
-                <div class="Botoes-crip-descrip-campo">
-
-                    <button class="Botao-descrip">Botão descriptografado</button>
-
-                    <button class="Botao-crip" onclick="criptografar()">Botão criptografado</button>
-
-                </div>
             </div>
+            <div class="Botoes-crip-descrip-campo">
+
+                <button class="Botao-descrip" onclick="descriptografar()">Botão descriptografado</button>
+
+                <button class="Botao-crip" onclick="criptografar()">Botão criptografado</button>
+
+            </div>
+
         </section>
 
         <section id="mostrar-mensagem">
             <aside class="aviso-imagem-mensagem" id="semMensagem">
                 <img src="images/High quality products 1 1.png" alt="Imagem que não entrou nenhuma informação">
                 <p class="Status-campo">Nenhuma mensagem encontrada</p>
-                
+
             </aside>
             <aside class="aviso-imagem-mensagem" id="mostrandoMensagem" style="display: none;">
                 <div class="showResult" id="showFinalMessage">
-                    
+
                 </div>
-                <button class="Botao-copiar">Copiar</button>
+                <button class="Botao-copiar" onclick="copiar()">Copiar</button>
             </aside>
 
         </section>
@@ -75,4 +77,5 @@
     </footer>
 </body>
 <script src="func.js"></script>
+
 </html>

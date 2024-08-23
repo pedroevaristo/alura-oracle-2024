@@ -1,0 +1,75 @@
+
+main {
+    height: calc(100vh - 80px - 20px);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
+}
+
+#digitar-texto{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box{
+    border: 1px solid red;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+
+}
+
+.digite-no-campo{
+    font-family: "Montserrat", "sans-serif";
+
+}
+
+.Campo-escrita::placeholder{
+    /*background-color: transparent;*/
+    color: black;
+    
+}
+
+
+#mostrar-mensagem {
+    background-color: var(--blue-light);
+    height: 70%;
+    border-radius: 8px;
+    padding: 8px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.aviso-imagem-mensagem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+
+}
+
+.Botao-copiar{
+
+    background-color: var(--background-color);
+    padding: 30px;
+    width: 100%;
+    border: none;
+    font-size: 1.5  rem;
+    
+
+}
+
+.Status-campo{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--background-color);
+    text-decoration: none;
+
+}
